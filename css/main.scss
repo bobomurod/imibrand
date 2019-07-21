@@ -42,3 +42,39 @@ header {
     }
   }
 }
+
+.wrapper {
+  display: grid; 
+  grid-template-columns: auto;
+
+  section {
+    padding: 3em;
+    h1, h2, .read-btn {
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    
+    }
+    .read-btn {
+      text-decoration: none;
+      color: black; 
+      font-weight: bold;
+      background: url('../assets/arrow_right.svg') no-repeat;
+      background-size: 8px;
+      background-position: 0 1px;
+      padding-left: 1em;
+    } 
+    .primary {
+      padding: 1.5em;
+      background-position: 3em;
+      border: 1px solid gray;
+      display: inline-block;
+      margin-top: 3em;
+      margin-left: -3em;
+    }
+  }
+
+}
