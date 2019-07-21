@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap&subset=cyrillic");
 
+
+$primary-color: #ffec8b;
+$submit-btn-bg-color: black;
+$submit-btn-color: white;
+
 body,
 html {
   margin: 0;
@@ -75,6 +80,54 @@ header {
       margin-top: 3em;
       margin-left: -3em;
     }
+    .clipper {
+      overflow: hidden;
+    }
+    
+  }
+  
+  section.hero {
+    padding-top: 8em;
+    background: url('../assets/main_suit.jpg');
+    background-size: cover;
+    p {
+      width: 70%;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
   }
 
+  section.sidebar, section.subscribe {
+    font-size: .9rem;
+    line-height: 1.6em;
+  }
+  section.sidebar {
+    background: $primary-color;
+    .read-btn {
+      margin-top: 2em;
+      background-position: 0 .3em;
+    }
+  }
+  section.subscribe {
+    input {
+      width: calc(100% - 2em);
+      padding: 1em;
+      font-family: 'Montserrat';
+      margin-bottom: 1em;
+    }
+    button {
+      width: 100%;
+      background: $submit-btn-bg-color;
+      color: $submit-btn-color;
+      padding: 1em;
+      border: none;
+      font-family: 'Montserrat';
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
 }

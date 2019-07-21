@@ -87,4 +87,56 @@ header nav ul li a {
   margin-top: 3em;
   margin-left: -3em;
 }
+
+.wrapper section .clipper {
+  overflow: hidden;
+}
+
+.wrapper section.hero {
+  padding-top: 8em;
+  background: url("../assets/main_suit.jpg");
+  background-size: cover;
+}
+
+.wrapper section.hero p {
+  width: 70%;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.wrapper section.sidebar, .wrapper section.subscribe {
+  font-size: .9rem;
+  line-height: 1.6em;
+}
+
+.wrapper section.sidebar {
+  background: #ffec8b;
+}
+
+.wrapper section.sidebar .read-btn {
+  margin-top: 2em;
+  background-position: 0 .3em;
+}
+
+.wrapper section.subscribe input {
+  width: calc(100% - 2em);
+  padding: 1em;
+  font-family: 'Montserrat';
+  margin-bottom: 1em;
+}
+
+.wrapper section.subscribe button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 1em;
+  border: none;
+  font-family: 'Montserrat';
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
