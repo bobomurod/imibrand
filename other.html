@@ -11,12 +11,13 @@
 
   <body>
     <header>
-      <a href="#" id="logo">IMI BRAND</a>
+      <a href="http://localhost:5500/" class="logo" id="logo">imi brand</a>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="http://localhost:5500/">Home</a></li>
+          <li><a href="http://localhost:5500/fabric.html">Fabric</a></li>
+          <li><a href="http://localhost:5500/other.html"><u>About</u></a></li>
+          <li><a href="http://localhost:5500/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -24,21 +25,29 @@
       <section class="hero">
         <div class="inner">
           <div class="clipper">
-            <h1>Go Garment</h1>
+            <h1><span class="highlightme">Go Garment</span></h1>
           </div>
           <div class="anim-panel">
-            <p>Get the best of garment professionals</p>
-            <a href="#" class="read-btn primary">Get Garments</a>
+            <p>
+              <span class="highlightme">
+
+                Get the best of garment professionals
+              </span>
+            </p>
+            <div class="main-button">
+
+              <a href="#" class="read-btn primary">Get Garments</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="sidebar">
         <div class="inner">
           <div class="clipper">
-            <h2>Featured</h2>
+            <h2 >Featured</h2>
           </div>
           <div class="anim-panel">
-            <p>
+            <p >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
               consequuntur in quidem laboriosam. Temporibus consectetur nihil
               est, ipsum assumenda animi fugit architecto quasi consequuntur
@@ -66,5 +75,34 @@
         </div>
       </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function(event) {
+          window.addEventListener("load", function(e) {
+            var tl = new TimelineMax();
+            tl.staggerFrom('section', 2, {
+              opacity: 0,
+              scale: .5,
+              ease: Power2.easeOut
+            }, 0.1);
+
+            tl.staggerFrom('h1, h2', .5, {
+              opacity: 0,
+              y: -40,
+              ease: Power2.easeInOut,
+            }, 0.2, "-=2");
+
+            tl.staggerFrom('.anim-panel', 1, {
+              opacity: 0,
+              y: -40,
+              ease: Power2.easeInOut,
+            }, 0.2, "-=1.5");
+          }, false)
+      });
+
+       
+
+    </script>
   </body>
 </html>

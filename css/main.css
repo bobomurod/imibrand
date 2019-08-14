@@ -28,8 +28,8 @@ header a {
   color: black;
 }
 
-header a.logo {
-  font-weight: bold;
+header .logo {
+  font-weight: bolder;
   text-transform: uppercase;
 }
 
@@ -78,7 +78,7 @@ header nav ul li a {
   background: url("../assets/arrow_right.svg") no-repeat;
   background-size: 8px;
   background-position: 0 1px;
-  padding-left: 1em;
+  padding-left: 0em;
 }
 
 .wrapper section .primary {
@@ -87,17 +87,24 @@ header nav ul li a {
   border: 1px solid gray;
   display: inline-block;
   margin-top: 3em;
-  margin-left: -3em;
   display: inline-block;
+}
+
+.wrapper section .primary:hover {
+  background: #e8e8e8;
 }
 
 .wrapper section .clipper {
   overflow: hidden;
 }
 
+.wrapper section .highlightme {
+  background-color: #e8e8e8;
+}
+
 .wrapper section.hero {
   padding-top: 8em;
-  background: url("../assets/main_suit.jpg");
+  background: url("../assets/about/main_suit_v5.jpg");
   background-size: cover;
 }
 
@@ -118,13 +125,17 @@ header nav ul li a {
 }
 
 .wrapper section.sidebar {
-  background: #ffec8b;
+  background: #7da2a9;
 }
 
 .wrapper section.sidebar .read-btn {
   margin-top: 2em;
   display: block;
   background-position: 0 0.3em;
+}
+
+.wrapper section.subscribe {
+  background: #c5d0d3;
 }
 
 .wrapper section.subscribe input {
