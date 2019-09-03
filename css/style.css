@@ -190,13 +190,13 @@ html, body {
         display: none;
     }
     body {
-        background: url('../assets/no_video2.jpg');
+        background: url('../assets/no_video3.jpg');
         background-size: cover;
     }
     #logo_img {
         position: fixed;
         width: 150px;
-        left: 0%;
+        left: -2%;
         bottom: 0px;
     }
 }
