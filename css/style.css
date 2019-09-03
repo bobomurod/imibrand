@@ -65,20 +65,27 @@ h4 {
 #logo_container {
     position: fixed;
 }
-#logo_img {
+#logo_aside {
+    
     width: 30em;
     filter: invert(100%);
 }
+/* #logo_img {} */
 #enter_button {
         background-color: Transparent;
         background-repeat:no-repeat;
-        border: 1px;
-        border-color: aqua;
+        border: 1px solid #000;
+        /* border-color: #000; */
         cursor:pointer;
         overflow: hidden;        
         font-size: 2rem;
 }
-
+#enter_button:hover {
+    border: 1px solid black;
+}
+#enter_button:focus {
+    outline: none;
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -193,10 +200,13 @@ html, body {
         background: url('../assets/no_video3.jpg');
         background-size: cover;
     }
-    #logo_img {
+    #logo_aside {
         position: fixed;
         width: 150px;
         left: -2%;
         bottom: 0px;
+    }
+    #logo_img {
+        width: 20em;
     }
 }
